@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+    background-repeat: no-repeat;
+    background-size: 300% 300%;
+    background-position: center center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.logo {
+    margin-top: 30%;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 500px;
+}
+
+.countdown {
+    display: flex;
+    transform: scale(2);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40%;
+}
+
+.tiempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.tiempo h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1;
+    margin: 0 0 5px;
+    transition: 0.5s;
+}
+
+.tiempo h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent
+}
+
+@media (max-width: 500px) {
+    .logo img {
+        max-width: 150px;
+    }
+    .countdown {
+        transform: scale(1);
+    }
+    .tiempo {
+        margin: 5px;
+    }
+    .tiempo h2 {
+        font-size: 12px;
+    }
+    .tiempo small {
+        font-size: 10px;
+    }
+}
