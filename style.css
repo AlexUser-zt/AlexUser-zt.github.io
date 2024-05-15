@@ -73,12 +73,12 @@ body {
     color: transparent
 }
 
-@media (max-width: 500px) {
+@media (max-width: 580px) {
     .logo img {
-        max-width: 150px;
+        max-width: 300px;
     }
     .countdown {
-        transform: scale(1);
+        transform: scale(2);
     }
     .tiempo {
         margin: 5px;
